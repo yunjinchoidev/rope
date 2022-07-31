@@ -1,4 +1,6 @@
-<img src="/rope.jpg" width="500px" height="300px" title="rope" alt=""></img><br/>
+
+![rope](https://user-images.githubusercontent.com/89494907/182028574-9d6feebb-c1f3-4a88-bd67-8fa693030508.jpg)
+
 # ROPE
 가치를 이어주는 rope [msa project]
 
