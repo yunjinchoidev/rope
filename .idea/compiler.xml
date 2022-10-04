@@ -2,19 +2,38 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dicoveryservice" />
+        <module name="apigateway-servie" />
+        <module name="first-service" />
+        <module name="catalog-servie" />
         <module name="user-service" />
+        <module name="order-service" />
+        <module name="second-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="apigateway-servie" target="11" />
+      <module name="catalog-servie" target="11" />
+      <module name="dicoveryservice" target="11" />
+      <module name="first-service" target="11" />
+      <module name="order-service" target="11" />
+      <module name="second-service" target="11" />
       <module name="user-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apigateway-servie" options="-parameters" />
+      <module name="catalog-servie" options="-parameters" />
+      <module name="dicoveryservice" options="-parameters" />
+      <module name="first-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="second-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
