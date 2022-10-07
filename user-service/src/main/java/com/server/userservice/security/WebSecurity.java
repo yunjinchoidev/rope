@@ -40,10 +40,9 @@ public class WebSecurity  extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/actuator/**").permitAll();
         http.authorizeRequests().antMatchers("/health_check/**").permitAll();
         http.authorizeRequests().antMatchers("/**").permitAll();
-//                .hasIpAddress(env.getProperty("192.168.0.6")) // <- IP 변경
+//                .access("hasIpAddress('192.168.0.6') or hasIpAddress('127.0.0.1')")
 //                .and()
 //                .addFilter(getAuthenticationFilter());
-
         http.headers().frameOptions().disable();
     }
     private AuthenticationFilter getAuthenticationFilter() throws Exception {

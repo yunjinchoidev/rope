@@ -5,7 +5,7 @@ spring:
   application:
     name: user-service
   datasource:
-      url: jdbc:mariadb://localhost:3306/msa
+      url: jdbc:mariadb://localhost:3306/rope
       driver-class-name: org.mariadb.jdbc.Driver
       username: root
       password: 1111
@@ -13,7 +13,7 @@ spring:
     generate-ddl: true
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
 
 eureka:
   instance:
@@ -27,6 +27,7 @@ greeting:
   message: Welcome to the Simple E-commerce.
 
 
+# 로그 레벨
 logging:
   level:
     com.server.user-service.client: DEBUG
